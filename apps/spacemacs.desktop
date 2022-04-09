@@ -1,0 +1,17 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=3.0
+Name=Spacemacs
+GenericName=Text Editor
+Comment=The best editor is neither Emacs nor Vim, it's Emacs and Vim!
+Keywords=Text;Editor;
+#Exec=/home/rafiyq/.local/bin/spacemacs develop
+Exec=/home/rafiyq/.local/share/applications/Emacs-27.2.glibc2.16-x86_64.AppImage
+Icon=/home/rafiyq/.local/bin/spacemacs.svg
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+MimeType=text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;text/x-c;text/x-c++;
+StartupNotify=true
+StartupWMClass=Spacemacs
+Categories=Development;TextEditor;

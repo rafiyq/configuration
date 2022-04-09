@@ -1,0 +1,7 @@
+[user]
+	email = rafiyq@protonmail.com
+	username = rafiyq
+[core]
+	editor = vim
+[init]
+        defaultBranch = main
