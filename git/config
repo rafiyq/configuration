@@ -2,6 +2,6 @@
 	email = rafiyq@protonmail.com
 	username = rafiyq
 [core]
-	editor = vim
+	editor = nvim
 [init]
         defaultBranch = main
