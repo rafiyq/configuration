@@ -1,6 +1,12 @@
 #!/bin/bash
 
-zsh_config_path=~/.config/zsh
+if [ ! -f $HOME/.zenv ] 
+then
+    ln -sf $HOME/.config/zsh/zenv $HOME/.zenv
+    source $HOME/.zenv
+fi
+
+zshrc=$ZDOTDIR/.zshrc
 prefix=$(dirname $(readlink -f $0))
 [ ! -z "$1" ] && prefix=$1 
 
@@ -11,20 +17,17 @@ while true; do
     case $z in
         "z"|"Z")
             echo "zsh selected."
-            rm -ir ~/.config/zsh
-            ln -sf $prefix/only-zsh $zsh_config_path
+            ln -sf $ZDOTDIR/only-zsh/myzshrc $zshrc
             break
             ;;
         "o"|"O")
             echo "oh-my-zsh selected."
-            rm -ir ~/.config/zsh
-            ln -sf $prefix/oh-my-zsh $zsh_config_path
+            ln -sf $ZDOTDIR/ohmyzsh/ohmyzrc $zshrc
             break
             ;;
         "g"|"G")
             echo "grml selected."
-            rm -ir ~/.config/zsh
-            ln -sf $prefix/grml $zsh_config_path
+            ln -sf $ZDOTDIR/grml/zshrc $zshrc
             break
             ;;
         *)

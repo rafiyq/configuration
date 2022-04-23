@@ -4,7 +4,6 @@
 ln -sfvi $PWD/bin $HOME/.local/
 ln -sfvi $PWD/tmux/tmux.conf $HOME/.tmux.conf
 ln -sfvi $PWD/git $HOME/.config/
-ln -sfvi $PWD/zsh $HOME/.config/
 ln -sfvi $PWD/editor/nvim $HOME/.config/
 #ln -sfvi $PWD/editor/vim/vimrc $HOME/.vimrc
 ln -sfvi $PWD/editor/sublime-text/* $HOME/.config/sublime-text/Packages/User/
@@ -17,7 +16,7 @@ ln -sfvi $PWD/editor/sublime-text/* $HOME/.config/sublime-text/Packages/User/
 #ln -sfv $PWD/apps/spacemacs-term.desktop $HOME/.local/share/applications/
 
 # zsh
-[ -z $HOME/.zshenv ] && echo "export ZDOTDIR=\$HOME/.config/zsh" >> $HOME/.zshenv
+ln -sfvi $PWD/zsh $HOME/.config/
 
 #$PWD/zsh/grml-zsh.sh
 #$PWD/zsh/oh-my-zsh.sh

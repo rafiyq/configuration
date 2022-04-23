@@ -1,0 +1,1 @@
+/home/rafiyq/.config/zsh/ohmyzsh/ohmyzrc

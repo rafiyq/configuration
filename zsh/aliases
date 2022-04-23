@@ -1,6 +1,3 @@
-# apps
-alias vim='nvim.appimage'
-
 #script
 alias addSrt='addSrt.sh'
 alias custom_status='custom_status.sh'
