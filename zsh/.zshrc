@@ -1,1 +1,1 @@
-/home/rafiyq/.config/zsh/ohmyzsh/ohmyzrc
+/home/rafiyq/.config/zsh/ohmyzrc

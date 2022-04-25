@@ -1,0 +1,9 @@
+# A minimal left prompt
+format = """$directory$character"""
+
+# move the rest of the prompt to the right
+right_format = """$all"""
+
+[character]
+success_symbol = "[/%](bold)"
+error_symbol = "[x](bold red)"
