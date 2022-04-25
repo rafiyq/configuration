@@ -9,7 +9,7 @@ HISTFILE=$ZDOTDIR/.zsh_history
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # conda-zsh-completion
-plugins=(git history)
+plugins=(git history zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -17,3 +17,4 @@ source $ZSH/oh-my-zsh.sh
 source $ZDOTDIR/aliases
 #miniconda3_dir=$HOME/Desktop/Tools/miniconda3
 #[ -d $miniconda3_dir ] && source $miniconda3_dir/conda-init.sh
+source $ZDOTDIR/conda-init

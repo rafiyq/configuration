@@ -1,1 +1,3 @@
 .z*
+plugins/*
+conda-init

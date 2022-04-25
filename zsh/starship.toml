@@ -1,9 +1,46 @@
-# A minimal left prompt
-format = """$directory$character"""
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status \
+$character """
 
-# move the rest of the prompt to the right
-right_format = """$all"""
+#right_format = "$git_branch$git_status"
 
+# Disable the blank line at the start of the prompt
+add_newline = false
+    
 [character]
-success_symbol = "[/%](bold)"
-error_symbol = "[x](bold red)"
+success_symbol = "[➜](bold)"
+
+[directory]
+truncation_length = 3
+truncation_symbol = "…/"
+    
+# Here is how you can shorten some long paths by text replacement
+# similar to mapped_locations in Oh My Posh:
+[directory.substitutions]
+"Documents" = " "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+# Keep in mind that the order matters. For example:
+# "Important Documents" = "  "
+# will not be replaced, because "Documents" was already substituted before.
+# So either put "Important Documents" before "Documents" or use the substituted version:
+# "Important  " = "  "
+
+[git_branch]
+format = "[$branch]($style)"
+style = "bright-black"
+
+[git_status]
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
+style = "cyan"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-black"
+
