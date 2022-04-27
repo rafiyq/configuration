@@ -1,7 +1,1 @@
 export ZDOTDIR=$HOME/.config/zsh
-
-# Homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
-# Flutter
-export PATH="$PATH:$HOME/Development/flutter/bin"
