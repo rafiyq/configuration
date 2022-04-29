@@ -5,6 +5,7 @@ ln -sfvi $PWD/bin $HOME/.local/
 ln -sfvi $PWD/tmux/tmux.conf $HOME/.tmux.conf
 ln -sfvi $PWD/git $HOME/.config/
 ln -sfvi $PWD/editor/nvim $HOME/.config/
+ln -sfvi $PWD/editor/helix $HOME/.config/
 #ln -sfvi $PWD/editor/vim/vimrc $HOME/.vimrc
 ln -sfvi $PWD/editor/sublime-text/* $HOME/.config/sublime-text/Packages/User/
 
