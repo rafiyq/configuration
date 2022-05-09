@@ -1,4 +1,27 @@
-theme = "solarized_dark"
+theme = "tokyonight_storm"
+
+[editor]
+mouse = false
+
+[editor.lsp]
+display-messages = true
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
+
+[editor.whitespace.characters]
+space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
 
 [editor.cursor-shape]
 insert = "bar"
+normal = "block"
+select = "underline"
+
+[keys.insert]
+j = { k = "normal_mode" }
+
