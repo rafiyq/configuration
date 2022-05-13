@@ -3,7 +3,7 @@ export ZSH=$HOME/.config/oh-my-zsh
 
 DEFAULT_USER="rafiyq"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="spaceship"
 HISTFILE=$ZDOTDIR/.zsh_history
 
 # Standard plugins can be found in $ZSH/plugins/
