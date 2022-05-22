@@ -1,4 +1,4 @@
-theme = "tokyonight_storm"
+theme = "gruvbox"
 
 [editor]
 mouse = false
@@ -20,7 +20,7 @@ newline = "⏎"
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
-select = "underline"
+select = "block"
 
 [keys.insert]
 j = { k = "normal_mode" }
