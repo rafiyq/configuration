@@ -6,9 +6,9 @@ local map = vim.api.nvim_set_keymap  -- to set keyboard mappings
 local opt = vim.opt 	             -- to set options
 
 -------------------- PLUGINS -------------------------------
-require('plugins')   	   -- plugins list
-require('lsp')
-require('treesitter')
+--require('plugins')   	   -- plugins list
+--require('lsp')
+--require('treesitter')
 
 -------------------- OPTIONS -------------------------------
 opt.completeopt = "menuone,noselect"    -- enable autocompletion
@@ -21,8 +21,8 @@ opt.smartcase = true                    -- uppercase
 opt.smartindent = true                  -- 
 opt.termguicolors = true                -- set term gui colors
 opt.undofile = true                     -- saves undo history to file 
-g.vscode_style = "dark"   		-- dark variant
-cmd 'colorscheme vscode'     		-- vscode colorscheme
+--g.vscode_style = "dark"   		-- dark variant
+--cmd 'colorscheme vscode'     		-- vscode colorscheme
 
 -------------------- MAPPINGS ------------------------------
 options = { noremap = true }
