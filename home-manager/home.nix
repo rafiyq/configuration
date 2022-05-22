@@ -6,8 +6,12 @@
   home.packages = [
     pkgs.aria
     pkgs.bat
+    pkgs.fish
+    pkgs.ffmpeg
     pkgs.git
+    pkgs.mpv
     pkgs.neovim
+    pkgs.starship
     pkgs.tmux
     pkgs.yt-dlp
     pkgs.zsh
