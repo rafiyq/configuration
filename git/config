@@ -1,7 +1,10 @@
 [user]
 	email = rafiyq@protonmail.com
 	username = rafiyq
+	signingkey = CD3873B0F92BEFF0
 [core]
 	editor = nvim
 [init]
 	defaultBranch = main
+[commit]
+	gpgsign = true
