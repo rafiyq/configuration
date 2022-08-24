@@ -1,7 +1,11 @@
 // Settings in here override those in "Default/Preferences.sublime-settings",
 // and are overridden in turn by syntax-specific settings.
 {
-	"font_face": "JetBrains Mono",
+	//"font_face": "Roboto Mono",
+	//"auto_hide_menu": true,
+	//"auto_hide_tabs": true,
+	"menu_visible": false,
+	//"reveal_menu": false,
 	"translate_tabs_to_spaces": true,
 	"auto_complete_cycle": true,
 	"auto_complete_use_history": true,
