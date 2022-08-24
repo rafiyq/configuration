@@ -3,7 +3,7 @@ export ZSH=$HOME/.config/oh-my-zsh
 
 DEFAULT_USER="rafiyq"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="spaceship"
+#ZSH_THEME="spaceship"
 HISTFILE=$ZDOTDIR/.zsh_history
 
 # Standard plugins can be found in $ZSH/plugins/
@@ -22,4 +22,6 @@ source $ZDOTDIR/aliases
 
 #export TERM="xterm-256color"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
-eval "$(direnv hook zsh)"
+#eval "$(direnv hook zsh)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/starship init zsh)"
+

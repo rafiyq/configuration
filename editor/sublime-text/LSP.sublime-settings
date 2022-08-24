@@ -8,7 +8,7 @@
     "clangd": {
       "enabled": true,
       "command": [
-        "clangd", // you may use an absolute path for this clangd executable
+        "/home/linuxbrew/.linuxbrew/bin/clangd",
         "-function-arg-placeholders=0",
         "-header-insertion-decorators=1",
         "-index",
