@@ -1,6 +1,6 @@
 [user]
 	email = rafiyq@protonmail.com
-	username = rafiyq
+	name = rafiyq
 [core]
 	editor = nvim
 [init]
