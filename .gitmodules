@@ -1,5 +1,5 @@
 [submodule "bin"]
-	path = bin
+	path = script
 	url = git@github.com:rafiyq/script.git
 [submodule "sway"]
 	path = sway
