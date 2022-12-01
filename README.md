@@ -1,4 +1,4 @@
 # Setting
 
 ## Clone repository
-git clone --recursive git@github.com:rafiyq/configurations.git
+git clone --recursive git@github.com:rafiyq/configuration.git
