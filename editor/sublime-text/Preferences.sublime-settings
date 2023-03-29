@@ -10,11 +10,11 @@
 	"auto_complete_cycle": true,
 	"auto_complete_use_history": true,
 	"gtk_client_side_window_decorations": false,
-	"file_tab_style": "angled",
+	"file_tab_style": "square",
     "vintage_start_in_command_mode": false,
     "vintage_use_clipboard": false,
     "vintage_ctrl_keys": false,
-    "ignored_packages": [
-		"Markdown",
-	],
+    // "ignored_packages": [
+	// 	"Markdown",
+	// ],
 }
