@@ -1,0 +1,237 @@
+/*This file contains any manual css for this page that needs to override the global styles.
+This is only required when different pages style the same element differently. This is just
+a hack to deal with our current css styles and no new styling should be added in this file.*/
+
+#ipython-main-app {
+    position: relative;
+}
+#jupyter-main-app {
+    position: relative;
+}
+div#notebook {
+ font-family: "Roboto", sans-serif;
+}
+body,
+div.body {
+ font-family: "Roboto", sans-serif;
+}
+a {
+ font-family: "Roboto", sans-serif;
+}
+div#notebook_toolbar div.dynamic-instructions {
+ font-family: "Roboto", sans-serif;
+}
+ul#tabs a {
+ font-family: "Roboto", sans-serif;
+}
+.nav-tabs {
+ font-family: "Roboto", sans-serif;
+}
+div#notebook {
+ font-family: "Roboto", sans-serif;
+}
+#header,
+.edit_app #header {
+ font-family: "Roboto", sans-serif;
+}
+.navbar-default {
+ font-family: "Roboto", sans-serif;
+}
+.navbar-default .navbar-nav > li > a {
+ font-family: "Roboto", sans-serif;
+}
+#notification_trusted {
+ font-family: "Roboto", sans-serif;
+}
+.dropdown-menu {
+ font-family: "Roboto", sans-serif;
+}
+.dropdown-menu:hover {
+ font-family: "Roboto", sans-serif;
+}
+.dropdown-menu > li > a {
+ font-family: "Roboto", sans-serif;
+}
+.dropdown-menu > .disabled > a,
+.dropdown-menu > .disabled > a:hover,
+.dropdown-menu > .disabled > a:focus {
+ font-family: "Roboto", sans-serif;
+}
+.btn,
+.btn-default {
+ font-family: "Roboto", sans-serif;
+}
+.dropdown-header {
+ font-family: "Roboto", sans-serif !important;
+}
+span#last-modified.btn.btn-xs.btn-default.sort-action,
+span#sort-name.btn.btn-xs.btn-default.sort-action,
+span#file-size.btn.btn-xs.btn-default.sort-action {
+ font-family: "Roboto", sans-serif;
+}
+.modal-content {
+ font-family: "Roboto", sans-serif;
+}
+.modal-header {
+ font-family: "Roboto", sans-serif;
+}
+.modal-content h4 {
+ font-family: "Roboto", sans-serif;
+}
+div.panel,
+div.panel-default,
+.panel,
+.panel-default {
+ font-family: "Roboto", sans-serif;
+}
+div.form-control,
+.form-control {
+ font-family: "Roboto", sans-serif;
+}
+div.prompt,
+.prompt {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+div.output_subarea.output_text.output_stream.output_stdout,
+div.output_subarea.output_text {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+div.output_area pre {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+div.output_html {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+div.prompt.output_prompt {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+div.out_prompt_overlay.prompt {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+div.text_cell,
+div.text_cell_render pre,
+div.text_cell_render {
+ font-family: "Roboto", sans-serif;
+}
+div.cell.text_cell.rendered.selected {
+ font-family: "Roboto", sans-serif;
+}
+div.cell.text_cell.unrendered.selected {
+ font-family: "Roboto", sans-serif;
+}
+div.cell.text_cell.selected {
+ font-family: "Roboto", sans-serif;
+}
+.edit_mode div.cell.text_cell.selected {
+ font-family: "Roboto", sans-serif;
+}
+div.text_cell.unrendered,
+div.text_cell.unrendered.selected,
+div.edit_mode div.text_cell.unrendered {
+ font-family: "Roboto", sans-serif;
+}
+div.cell.text_cell.rendered .prompt {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+div.cell.text_cell.unrendered .prompt {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+div.rendered_html code {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+.well code,
+code {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+div.rendered_html pre {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+div.text_cell_render pre,
+div.text_cell_render code {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+div.text_cell_render h1,
+div.rendered_html h1,
+div.text_cell_render h2,
+div.rendered_html h2,
+div.text_cell_render h3,
+div.rendered_html h3,
+div.text_cell_render h4,
+div.rendered_html h4,
+div.text_cell_render h5,
+div.rendered_html h5 {
+ font-family: "Roboto", sans-serif;
+}
+.rendered_html td {
+ font-family: "Roboto", sans-serif !important;
+}
+.rendered_html table {
+ font-family: "Roboto", sans-serif !important;
+}
+.rendered_html thead {
+ font-family: "Roboto", sans-serif !important;
+}
+div.widget-area a {
+ font-family: "Roboto", sans-serif;
+}
+div.widget-area a:hover,
+div.widget-area a:focus {
+ font-family: "Roboto", sans-serif;
+}
+.rendered_html :link {
+ font-family: "Roboto", sans-serif;
+}
+.rendered_html :visited:hover,
+.rendered_html :link:hover {
+ font-family: "Roboto", sans-serif;
+}
+div.nbext-selector > nav > .nav > li > a {
+ font-family: "Roboto", sans-serif;
+}
+div.nbext-readme > .nbext-readme-contents > .rendered_html {
+ font-family: "Roboto", sans-serif;
+}
+.kse-input-group-pretty > kbd {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+.kse-input-group-pretty > kbd {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+input.raw_input {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+.typeahead-field input {
+ font-family: "Roboto", sans-serif;
+}
+.typeahead-container button {
+ font-family: "Roboto", sans-serif;
+}
+.typeahead-dropdown,
+.typeahead-list {
+ font-family: "Roboto", sans-serif;
+}
+.terminal-app .terminal {
+ font-family: "Roboto Mono", monospace, monospace;
+ -webkit-box-shadow: none;
+}
+div.CodeMirror,
+div.CodeMirror pre {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+.ipython_tooltip {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+.ipython_tooltip .tooltiptext pre {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+.cm-s-ipython.CodeMirror {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+div.cell.text_cell .cm-s-default .cm-header {
+ font-family: "Roboto", sans-serif;
+}
+
+.completions select {
+ font-family: "Roboto Mono", monospace, monospace;
+}
+
