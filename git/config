@@ -1,7 +1,12 @@
 [user]
-	email = rafiyq@protonmail.com
+	email = rafiyq@outlook.com
 	name = rafiyq
 [core]
 	editor = nvim
 [init]
 	defaultBranch = main
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
