@@ -39,6 +39,7 @@ conda-init() {
 alias yt-best='pwsh ~/.local/bin/powershell/ytdl.ps1 best'
 alias yt-sub='pwsh ~/.local/bin/powershell/ytdl.ps1 subtitle'
 alias startship='eval "$(starship init bash)"'
+alias dark-mode='gsettings set org.gnome.desktop.interface gtk-theme Yaru-dark'
 
 # Git shortcut
 alias gss='git status --short'
@@ -56,19 +57,12 @@ alias gc='git clone --recurse-submodules'
 
 # prevent opening browser
 export BROWSER=none
+export EDITOR=nvim
 
 # PROMPT
-short_pwd() {
-  local pwd=$(pwd)
-  pwd=${pwd/#$HOME/\~}
-  sed 's:\([^/]\)[^/]*/:\1/:g' <<<"$pwd"
-}
+source ./prompt_function
 
-parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]$(short_pwd)\[\033[00m\]\$ '
+PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]$(short_pwd_v2)\[\033[00m\]\$ '
 
 upgrade-neovim() {
     neovim_url="https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage"
