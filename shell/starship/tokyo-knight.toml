@@ -5,25 +5,32 @@ $directory\
 $git_branch\
 $git_state\
 $git_status\
-$cmd_duration\
-$line_break\
 $python\
 $character"""
 
+right_format = """
+$cmd_duration\
+"""
+
+add_newline = false
+command_timeout = 10000000
+
 [directory]
-style = "blue"
+style = "bold blue"
+truncation_length = 3
+truncation_symbol = '…/'
 
 [character]
-success_symbol = "[❯](purple)"
-error_symbol = "[❯](red)"
-vimcmd_symbol = "[❮](green)"
+success_symbol = "[%](white)"
+error_symbol = "[%](red bold)"
+vimcmd_symbol = "[<](green)"
 
 [git_branch]
 format = "[$branch]($style)"
 style = "bright-black"
 
 [git_status]
-format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218) ($ahead_behind$stashed)]($style)"
+format = "[[(*$conflicted$untracked$modified$staged$renamed$deleted)](218)($ahead_behind$stashed)]($style) "
 style = "cyan"
 conflicted = "​"
 untracked = "​"
