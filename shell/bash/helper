@@ -1,0 +1,16 @@
+#!/bin/bash
+
+upgrade-neovim() {
+    neovim_url="https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage"
+    neovim_path="/usr/local/bin/nvim"
+    sudo wget $neovim_url -O $neovim_path
+    sudo chmod +x $neovim_path
+}
+
+tmux() {
+    if [ "$#" -eq 0 ]; then 
+        command tmux new -s default
+    else 
+        command tmux "$@"
+    fi
+}
