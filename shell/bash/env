@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# PATH
+PATH="$HOME/Development/idea/bin:$PATH"
+
 # prevent opening browser
 export BROWSER=none
 export EDITOR=nvim
