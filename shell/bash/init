@@ -1,72 +1,7 @@
-# ENV
-mamba-init() {
-    # >>> mamba initialize >>>
-    # !! Contents within this block are managed by 'mamba init' !!
-    export MAMBA_EXE="/home/rafiyq/.local/bin/micromamba";
-    export MAMBA_ROOT_PREFIX="/home/rafiyq/Development/micromamba";
-    __mamba_setup="$("$MAMBA_EXE" shell hook --shell bash --prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
-    if [ $? -eq 0 ]; then
-        eval "$__mamba_setup"
-    else
-        if [ -f "/home/rafiyq/Development/micromamba/etc/profile.d/micromamba.sh" ]; then
-            . "/home/rafiyq/Development/micromamba/etc/profile.d/micromamba.sh"
-        else
-            export  PATH="/home/rafiyq/Development/micromamba/bin:$PATH"  # extra space after export prevents interference from conda init
-        fi
-    fi
-    unset __mamba_setup
-    # <<< mamba initialize <<<
-}
+#!/bin/bash
 
-conda-init() {
-    # >>> conda initialize >>>
-    # !! Contents within this block are managed by 'conda init' !!
-    __conda_setup="$('/home/rafiyq/Development/Anaconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-    if [ $? -eq 0 ]; then
-        eval "$__conda_setup"
-    else
-        if [ -f "/home/rafiyq/Development/Anaconda/etc/profile.d/conda.sh" ]; then
-            . "/home/rafiyq/Development/Anaconda/etc/profile.d/conda.sh"
-        else
-            export PATH="/home/rafiyq/Development/Anaconda/bin:$PATH"
-        fi
-    fi
-    unset __conda_setup
-    # <<< conda initialize <<<
-}
-
-# ALIAS
-alias yt-best='pwsh ~/.local/bin/powershell/ytdl.ps1 best'
-alias yt-sub='pwsh ~/.local/bin/powershell/ytdl.ps1 subtitle'
-alias startship='eval "$(starship init bash)"'
-alias dark-mode='gsettings set org.gnome.desktop.interface gtk-theme Yaru-dark'
-
-# Git shortcut
-alias gss='git status --short'
-alias gst='git status'
-
-alias ga='git add'
-alias gaa='git add --all'
-
-alias gcmsg='git commit --message'
-alias gcam='git commit --all --message'
-
-alias gp='git push'
-alias gd='git diff'
-alias gc='git clone --recurse-submodules'
-
-# prevent opening browser
-export BROWSER=none
-export EDITOR=nvim
-
-# PROMPT
-source ./prompt_function
-
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]$(short_pwd_v2)\[\033[00m\]\$ '
-
-upgrade-neovim() {
-    neovim_url="https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage"
-    neovim_path="/usr/local/bin/nvim"
-    sudo wget $neovim_url -O $neovim_path
-    sudo chmod +x $neovim_path
-}
+bash_config="$HOME/.config/bash"
+source $bash_config/aliases
+source $bash_config/helper
+source $bash_config/env
+source $bash_config/prompt
