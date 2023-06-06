@@ -1,3 +1,37 @@
+function prompt {
+  param ($profile)
+
+  $myPWD = $(Get-WorkingDirectory 3 2 15 20)
+  $host.ui.RawUI.WindowTitle = "Current Folder: $myPWD"
+
+  switch ($PROMPT_PROFILE) {
+    "Ubuntu" {
+      Write-Host (MakeBold "$([Environment]::UserName)@$([Environment]::MachineName)") -ForegroundColor DarkGreen -NoNewLine 
+      Write-Host (MakeBold ":") -ForegroundColor White -NoNewLine 
+      Write-Host (MakeBold $myPWD) -ForegroundColor DarkBlue -NoNewLine
+      Write-Host (MakeBold $(if ($NestedPromptLevel -ge 1) { ">>" }))  -NoNewLine
+      return "$ "
+    }
+    Default {
+      if ($IsWindows) {
+        $identity = [Security.Principal.WindowsIdentity]::GetCurrent()
+        $principal = [Security.Principal.WindowsPrincipal] $identity
+        $adminRole = [Security.Principal.WindowsBuiltInRole]::Administrator
+
+        Write-Host $(if (Test-Path variable:/PSDebugContext) { "[DBG]: " }
+          elseif($principal.IsInRole($adminRole)) { "[ADMIN]: " }
+          else { '' }
+        ) -NoNewLine
+      }
+
+      Write-Host "PS " -NoNewLine
+      Write-Host $myPWD -NoNewLine
+      Write-Host $(if ($NestedPromptLevel -ge 1) { ">>" })  -NoNewLine
+      return "> "
+    }
+  }
+}
+
 function Get-WorkingDirectory {
   param (
     $TrunAfter,
@@ -58,28 +92,3 @@ function Get-GitStatus($repoDir) {
   Write-Output $branch
 
 }
-
-function prompt {
-  $myPWD = $(Get-WorkingDirectory 3 2 15 20)
-  $host.ui.RawUI.WindowTitle = "Current Folder: $myPWD"
-
-  if ($IsWindows) {
-    $identity = [Security.Principal.WindowsIdentity]::GetCurrent()
-    $principal = [Security.Principal.WindowsPrincipal] $identity
-    $adminRole = [Security.Principal.WindowsBuiltInRole]::Administrator
-
-    Write-Host $(if (Test-Path variable:/PSDebugContext) { "[DBG]: " }
-      elseif($principal.IsInRole($adminRole)) { "[ADMIN]: " }
-      else { '' }
-    ) -NoNewLine
-  }
-
-  Write-Host (MakeBold "$([Environment]::UserName)@$([Environment]::MachineName)") -ForegroundColor DarkGreen -NoNewLine 
-  Write-Host (MakeBold ":") -ForegroundColor White -NoNewLine 
-  ##Write-Host "PS " -NoNewLine
-  Write-Host (MakeBold $myPWD) -ForegroundColor DarkBlue -NoNewLine
-  Write-Host (MakeBold $(if ($NestedPromptLevel -ge 1) { ">>" }))  -NoNewLine
-  #return "> "
-  return "$ "
-}
-
