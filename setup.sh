@@ -8,6 +8,7 @@ ln -sfvi $HERE/editor/nvim $HOME/.config/
 ln -sfvi $HERE/editor/helix $HOME/.config/
 #ln -sfvi $HERE/editor/vim/vimrc $HOME/.vimrc
 ln -sfvi $HERE/editor/sublime-text/* $HOME/.config/sublime-text/Packages/User/
+ln -sfvi $HERE/shell/bash $HOME/.config/
 ln -sfvi $HERE/shell/zsh $HOME/.config/
 ln -sfvi $HERE/shell/fish $HOME/.config/
 
