@@ -35,4 +35,5 @@ set -gx EDITOR nvim
 set -gx BROWSER none
 
 # Starship prompt
-starship init fish | source
+#starship init fish | source
+oh-my-posh init fish | source
