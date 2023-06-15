@@ -1,17 +1,19 @@
 #script
-alias addSrt='addSrt.sh'
-alias custom_status='custom_status.sh'
-alias emacsclient-server='emacsclient-server.sh'
-alias gcpp='gcpp.sh'
-alias internet-speed-test='internet-speed-test.sh'
-alias rapikan_unduhan='rapikan_unduhan.py'
-alias spacemacs='spacemacs.svg'
-alias speech-to-text='speech-to-text.py'
-alias start-sway='start-sway.sh'
-alias ytdl='ytdl.sh'
-alias zsh-profile='zsh-profile.sh'
-alias grml-zsh='zsh-profile.sh grml'
-alias ohmyzsh='zsh-profile.sh ohmyzsh'
+alias yt-best='pwsh ~/.local/bin/powershell/ytdl.ps1 best'
+alias yt-sub='pwsh ~/.local/bin/powershell/ytdl.ps1 subtitle'
+alias startship='eval "$(starship init bash)"'
+alias dark-mode='gsettings set org.gnome.desktop.interface gtk-theme Yaru-dark'
+
+# Git shortcut
+alias gss='git status --short'
+alias gst='git status'
+alias ga='git add'
+alias gaa='git add --all'
+alias gcmsg='git commit --message'
+alias gcam='git commit --all --message'
+alias gp='git push'
+alias gd='git diff'
+alias gc='git clone --recurse-submodules'
 
 # Color
 alias ls='ls --color=auto'
@@ -26,14 +28,14 @@ alias la='ls -A'
 alias l='ls -CF'
 
 # System
-alias wifi-on='sudo systemctl start wpa_supplicant@wlp3s0'
-alias wifi-off='sudo systemctl stop wpa_supplicant@wlp3s0'
-alias wifi-restart='sudo systemctl restart wpa_supplicant@wlp3s0'
-alias bt-on='sudo systemctl start bluetooth'
-alias bt-off='sudo systemctl stop bluetooth'
+#alias wifi-on='sudo systemctl start wpa_supplicant@wlp3s0'
+#alias wifi-off='sudo systemctl stop wpa_supplicant@wlp3s0'
+#alias wifi-restart='sudo systemctl restart wpa_supplicant@wlp3s0'
+#alias bt-on='sudo systemctl start bluetooth'
+#alias bt-off='sudo systemctl stop bluetooth'
 
 # Bluetooth
-alias connect-Fenda='bluetoothctl power on && bluetoothctl connect F0:13:C3:05:F0:3E'
-alias disconnect-Fenda='bluetoothctl connect F0:13:C3:05:F0:3E && bluetoothctl power off'
+#alias connect-Fenda='bluetoothctl power on && bluetoothctl connect F0:13:C3:05:F0:3E'
+#alias disconnect-Fenda='bluetoothctl connect F0:13:C3:05:F0:3E && bluetoothctl power off'
 
 
