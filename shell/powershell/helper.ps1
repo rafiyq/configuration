@@ -1,4 +1,4 @@
-function Set-SSHagent {
+function Set-SSHAgent {
   foreach ($item in (ssh-agent -c)) {
     $result = $item.Replace(';', '').Split(' ')
     if ($result[0] -eq "setenv") { 
