@@ -7,7 +7,7 @@ short_pwd() {
 }
 
 short_pwd_v2() {
-  max_len=50
+  max_len=40
   max_dir_len=10
   trailing_dir=2
   
