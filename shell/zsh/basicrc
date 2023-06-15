@@ -36,8 +36,16 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-source $ZDOTDIR/conda-init
+#source $ZDOTDIR/conda-init
+source $ZDOTDIR/aliases
+source $ZDOTDIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Starship prompt
-export STARSHIP_CONFIG=$ZDOTDIR/starship.toml
+#export STARSHIP_CONFIG=$ZDOTDIR/starship.toml
 eval "$(starship init zsh)"
+
+# pure prompt
+#fpath+=($ZDOTDIR/themes/pure)
+#autoload -U promptinit; promptinit
+#prompt pure
