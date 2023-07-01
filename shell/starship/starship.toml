@@ -130,7 +130,7 @@ format = '[ \($environment\) ]($style)'
 [cmd_duration]
 #style = "bg:#33658A"
 style = "bg:#06969A"
-format = '[神$duration ]($style)'
+format = '[󰔚 $duration ]($style)'
 
 ## START =================================================================
 
