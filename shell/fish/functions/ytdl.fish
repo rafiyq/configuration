@@ -52,7 +52,7 @@ function ytdl
         end
     end
 
-    if test -n unrecognized_command
+    if test -n $unrecognized_command
         $ytdl $unrecognized_command[2..-1] $youtube_url
     end
 end
