@@ -8,7 +8,8 @@ foreground = '#eeeeec'
 # 0x Colors the cursor will use if `custom_cursor_colors` is true
 [colors.cursor]
 text = '#bbbbbb'
-cursor = '#b4d5ff'
+# cursor = '#b4d5ff'
+cursor = '#ffb6c1'
 
 # 0x Normal colors
 [colors.normal]
