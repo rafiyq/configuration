@@ -2,7 +2,7 @@
 HERE="$( cd "$(dirname "$0")" ; pwd -P )"
 
 # config
-ln -sfvi $HERE/tmux/tmux.conf $HOME/.tmux.conf
+ln -sfvi $HERE/tmux $HOME/.config/
 ln -sfvi $HERE/git $HOME/.config/
 ln -sfvi $HERE/editor/nvim $HOME/.config/
 ln -sfvi $HERE/editor/helix $HOME/.config/
