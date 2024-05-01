@@ -14,12 +14,3 @@ set -x JAVA_HOME $HOME/.jdks/corretto-19.0.2
 
 # Rust
 source $HOME/.cargo/env.fish
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-function conda-init
-    if test -f /home/rafiyq/.miniconda3/bin/conda
-        eval /home/rafiyq/.miniconda3/bin/conda "shell.fish" hook $argv | source
-    end
-end
-# <<< conda initialize <<<
