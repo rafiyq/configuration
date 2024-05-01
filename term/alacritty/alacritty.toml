@@ -5,3 +5,10 @@ import = [
 [shell]
 program = "/usr/bin/tmux"
 args = ["new-session", "-A", "-D", "-s", "main"]
+
+[font]
+normal = { family = "UbuntuMono Nerd Font", style = "Regular" }
+bold= { family = "UbuntuMono Nerd Font", style = "Bold" }
+italic = { family = "UbuntuMono Nerd Font", style = "Italic" }
+bold_italic = { family = "UbuntuMono Nerd Font", style = "Bold Italic" }
+size = 12.0
