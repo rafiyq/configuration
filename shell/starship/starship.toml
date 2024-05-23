@@ -16,6 +16,7 @@ $kotlin\
 $nodejs\
 $rust\
 [█](#86BBD8)\
+$conda\
 $docker_context\
 [█](#06969A)\
 $cmd_duration\
@@ -23,7 +24,6 @@ $character"""
 
 ## SETTINGS ===============================================================
 
-right_format = "($conda)"
 command_timeout = 5000       # Timeout for commands executed (milliseconds)
 add_newline = false  
 
@@ -121,9 +121,9 @@ format = '[$symbol ($version) ]($style)'
 ## SKY ===================================================================
 
 [conda]
-symbol = " "
-#style = "bg:#86BBD8"
-format = '[ \($environment\) ]($style)'
+symbol = ""
+style = "bg:#86BBD8"
+format = '[$symbol $environment ]($style)'
 
 ## BLUE ==================================================================
 
