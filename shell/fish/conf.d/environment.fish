@@ -14,3 +14,8 @@ set -x JAVA_HOME $HOME/.jdks/corretto-19.0.2
 
 # Rust
 source $HOME/.cargo/env.fish
+
+# Mamba
+set -gx MAMBA_EXE /opt/micromamba/bin/micromamba
+set -gx MAMBA_ROOT_PREFIX "$HOME/.micromamba"
+set -gx MAMBA_NO_PROMPT 1
