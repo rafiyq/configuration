@@ -4,3 +4,6 @@
 [submodule "sway"]
 	path = sway
 	url = git@github.com:rafiyq/sway-config.git
+[submodule "nix/wsl-flake"]
+	path = nix/wsl-flake
+	url = git@github.com:rafiyq/wsl-flake.git
