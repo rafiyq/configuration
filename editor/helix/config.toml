@@ -9,4 +9,4 @@ normal = "block"
 select = "underline"
 
 [keys.insert]
-j = { k = "normal_mode" } # Maps `jk` to exit insert mode
+j.k = "normal_mode"    # Maps `jk` to exit insert mode
