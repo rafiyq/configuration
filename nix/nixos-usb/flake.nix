@@ -5,7 +5,7 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
-        ({ pkgs, modulesPath, ... }: {
+        ({ modulesPath, ... }: {
           imports = [ (modulesPath + "/installer/sd-card/sd-image-x86_64.nix") ];
         })
       ];
