@@ -14,7 +14,7 @@
         ({ modulesPath, ... }: {
           imports = [ (modulesPath + "/installer/sd-card/sd-image-x86_64.nix") ];
         })
-
+        ../modules/packages.nix
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
