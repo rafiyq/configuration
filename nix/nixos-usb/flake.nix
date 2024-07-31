@@ -16,6 +16,14 @@
         ({ inputs, pkgs, modulesPath, home-manager, ... }: {
           imports = [ 
             (modulesPath + "/installer/sd-card/sd-image-x86_64.nix")
+            ../modules/packages.nix
+          ];
+
+          environment.systemPackages = with pkgs; [
+            bat
+            brave
+            ffmpeg
+            yt-dlp
           ];
 
           programs.hyprland = {
@@ -31,11 +39,16 @@
 
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.user = import ../modules/user.nix;
+          home-manager.users.user = {
+            home.stateVersion = "24.11";
+            imports = [
+              ../modules/user.nix 
+              ../modules/hyprland.nix 
+            ];
+          };
 
           system.stateVersion = "24.11";
         })
-        ../modules/packages.nix
         home-manager.nixosModules.home-manager
       ];
     };

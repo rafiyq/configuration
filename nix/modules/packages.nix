@@ -1,12 +1,4 @@
-{ config, pkgs, ... }:
-
 {
-  environment.systemPackages = with pkgs; [
-    bat
-    ffmpeg
-    yt-dlp
-  ];
-
   programs.fish = {
     enable = true;
     shellAliases = {

@@ -1,9 +1,4 @@
-{ config, pkgs, ... }:
-
 {
-  imports = [ ./hyprland.nix ];
-  home.stateVersion = "24.11";
-
   programs.aria2 = {
     enable = true;
     settings = {
