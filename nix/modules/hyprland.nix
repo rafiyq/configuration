@@ -1,9 +1,11 @@
 {
   wayland.windowManager.hyprland.settings = {
-    "$mod" = "SUPER";
+    "$mainMod" = "SUPER";
+    "$menu" = "wofi --show drun"
+    "$terminal" = "foot";
     bind =
       [
-        "$mod, F, exec, firefox"
+        "$mainMod, R, exec, $menu"
         ", Print, exec, grimblast copy area"
       ]
       ++ (
@@ -23,4 +25,16 @@
           10)
       );
   };
+
+  programs.alacritty = {
+    enable = true;
+    settings = {
+      shell = {
+        program = "tmux";
+        args = ["new-session", "-A", "-D", "-s", "main"];
+    };
+  };
+
+  programs.foot.enable = true;
+  programs.wofi.enable = true;
 }
