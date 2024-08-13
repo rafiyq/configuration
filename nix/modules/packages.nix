@@ -14,7 +14,7 @@
     };
     interactiveShellInit = ''
       function border --on-event fish_postexec
-          string repeat --count $COLUMNS _
+          string repeat --count $COLUMNS ⸻
       end
       set -U fish_greeting
     '';
