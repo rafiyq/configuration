@@ -45,6 +45,7 @@
     baseIndex = 1;
     escapeTime = 0;
     extraConfig = ''
+      set-option -sa terminal-overrides ",xterm*:Tc"
       set -g mouse on
       set-option -g renumber-windows on
 
