@@ -1,9 +1,9 @@
 [submodule "bin"]
 	path = script
-	url = git@github.com:rafiyq/script.git
+	url = https://github.com/rafiyq/script.git
 [submodule "sway"]
 	path = sway
-	url = git@github.com:rafiyq/sway-config.git
+	url = https://github.com/rafiyq/sway-config.git
 [submodule "nix/wsl-flake"]
 	path = nix/wsl-flake
-	url = git@github.com:rafiyq/wsl-flake.git
+	url = https://github.com/rafiyq/wsl-flake.git
