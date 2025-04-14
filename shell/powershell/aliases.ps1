@@ -1,9 +1,13 @@
+# Commands
 New-Alias -Name "Aria2" -Value $env:LOCALAPPDATA\aria2-1.37.0\aria2c.exe -Description "command-line download utility"
 New-Alias -Name "FFmpeg" -Value $env:LOCALAPPDATA\ffmpeg-7.1\bin\ffmpeg.exe -Description "audio & video solution"
 New-Alias -Name "FFprobe" -Value $env:LOCALAPPDATA\ffmpeg-7.1\bin\ffprobe.exe -Description "audio & video solution"
 New-Alias -Name "Git" -Value $env:LOCALAPPDATA\Git-2.48.1\bin\git.exe -Description "distributed version control system"
 New-Alias -Name "MicroMamba" -Value $env:LOCALAPPDATA\micromamba-2.0.5\bin\micromamba.exe -Description "cross-platform package manager"
 New-Alias -Name "NVim" -Value $env:LOCALAPPDATA\nvim-0.10.4\bin\nvim.exe -Description "text editor"
+
+# Script
+New-Alias -Name "Convert-ToWebP" -Value $profileDir/script/Convert-ToWebP.ps1
 
 # Git Shortcut
 function Git-Status { git status } 
