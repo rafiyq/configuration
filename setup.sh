@@ -44,7 +44,8 @@ link_item() {
 # --- Module Definitions ---
 
 # Editors
-setup_nvim()     { link_item "editor/nvim" "$CONFIG_DIR"; }
+setup_nvim()     { link_item "editor/nvim" "$CONFIG_DIR" "nvim"; }
+setup_lazyvim()  { link_item "editor/lazyvim" "$CONFIG_DIR" "nvim"; }
 setup_helix()    { link_item "editor/helix" "$CONFIG_DIR"; }
 setup_sublime()  { 
     local sublime_user="$CONFIG_DIR/sublime-text/Packages/User"
@@ -85,6 +86,7 @@ setup_scripts() {
 # Array of menu items: "Label|Category|Function"
 MENU_ITEMS=(
     "NVIM|Editor|setup_nvim"
+    "LAZYVIM|Editor|setup_lazyvim"
     "HELIX|Editor|setup_helix"
     "SUBLIME|Editor|setup_sublime"
     "GIT|Base|setup_git"
