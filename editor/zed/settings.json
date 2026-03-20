@@ -7,17 +7,31 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "buffer_font_family": "Google Sans Code",
-  "buffer_font_size": 13,
-  "buffer_line_height": "standard",
-  "ui_font_family": "Google Sans",
-  "vim_mode": true,
-  "inlay_hints": {
-    "enabled": true,
-  },
+  "ssh_connections": [
+    {
+      "host": "ubuntu",
+      "username": "user",
+      "args": [],
+      "projects": []
+    },
+    {
+      "host": "alwaysfree-vnic",
+      "username": "opc",
+      "args": [],
+      "projects": []
+    }
+  ],
   "languages": {
     "JSONC": {
       "tab_size": 2,
     },
   },
+  "inlay_hints": {
+    "enabled": true,
+  },
+  "buffer_font_family": "Google Sans Code",
+  "buffer_font_size": 13,
+  "buffer_line_height": "standard",
+  "ui_font_family": "Google Sans",
+  "vim_mode": true,
 }
