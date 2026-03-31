@@ -1,9 +1,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-BASH_CONFIG=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
-
-source $BASH_CONFIG/aliases
-source $BASH_CONFIG/helper
-source $BASH_CONFIG/env
-source $BASH_CONFIG/prompt
+source ~/.config/bash/aliases
+source ~/.config/bash/env
+source ~/.config/bash/helper
+source ~/.config/bash/prompt
+source ~/.config/bash/shell
+bind -f ~/.config/bash/inputrc

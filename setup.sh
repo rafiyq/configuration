@@ -66,7 +66,8 @@ setup_tmux() {
 # Shells
 setup_bash() {
   link_item "shell/bash" "$CONFIG_DIR" "bash"
-  grep -qxF "source $CONFIG_DIR/bash/rc" ~/.bashrc || echo "source $CONFIG_DIR/bash/rc" >>~/.bashrc
+  grep -qxF "source $CONFIG_DIR/bash/init" ~/.bashrc || echo "source $CONFIG_DIR/bash/init" >>~/.bashrc
+  wget -nv -O $CONFIG_DIR/bash/inputrc https://raw.githubusercontent.com/basecamp/omarchy/refs/heads/dev/default/bash/inputrc
 }
 setup_zsh() { link_item "shell/zsh" "$CONFIG_DIR" "zsh"; }
 setup_fish() { link_item "shell/fish" "$CONFIG_DIR" "fish"; }
