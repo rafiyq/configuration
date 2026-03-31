@@ -1,11 +1,13 @@
-#!/bin/bash
+# Directories
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
 
-alias yt-best='pwsh ~/.local/bin/powershell/ytdl.ps1 best'
-alias yt-sub='pwsh ~/.local/bin/powershell/ytdl.ps1 subtitle'
-alias startship='eval "$(starship init bash)"'
-alias dark-mode='gsettings set org.gnome.desktop.interface gtk-theme Yaru-dark'
+# eza
+alias eza='eza -lh --group-directories-first --icons=auto'
+alias ezt='eza --tree --level=2 --long --icons --git'
 
-# Git shortcut
+# Git
 alias gss='git status --short'
 alias gst='git status'
 
