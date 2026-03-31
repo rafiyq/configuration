@@ -1,7 +1,9 @@
-#!/bin/bash
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
 
-bash_config="$HOME/.config/bash"
-source $bash_config/aliases
-source $bash_config/helper
-source $bash_config/env
-source $bash_config/prompt
+BASH_CONFIG=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
+
+source $BASH_CONFIG/aliases
+source $BASH_CONFIG/helper
+source $BASH_CONFIG/env
+source $BASH_CONFIG/prompt
