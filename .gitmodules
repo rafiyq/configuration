@@ -2,7 +2,7 @@
 	path = script
 	url = https://github.com/rafiyq/script.git
 [submodule "sway"]
-	path = desktop/sway
+	path = wm
 	url = https://github.com/rafiyq/sway-config.git
 [submodule "nix/wsl-flake"]
 	path = nix/wsl-flake
