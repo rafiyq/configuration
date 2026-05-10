@@ -7,31 +7,24 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "ssh_connections": [
-    {
-      "host": "ubuntu",
-      "username": "user",
-      "args": [],
-      "projects": []
-    },
-    {
-      "host": "alwaysfree-vnic",
-      "username": "opc",
-      "args": [],
-      "projects": []
-    }
-  ],
-  "languages": {
-    "JSONC": {
-      "tab_size": 2,
-    },
-  },
-  "inlay_hints": {
-    "enabled": true,
-  },
+  "vim_mode": true,
   "buffer_font_family": "Google Sans Code",
+  "buffer_font_fallbacks": ["JetBrainsMono Nerd Font Propo", ".ZedMono"],
   "buffer_font_size": 13,
   "buffer_line_height": "standard",
   "ui_font_family": "Google Sans",
-  "vim_mode": true,
+  "ui_font_fallbacks": ["Symbols Nerd Font", ".ZedSans"],
+  "inlay_hints": {
+    "enabled": true,
+  },
+  "ssh_connections": [
+    {
+      "host": "home",
+      "projects": [],
+    },
+    {
+      "host": "oracle-dev",
+      "projects": [{ "paths": ["~/code/blog"] }],
+    },
+  ],
 }
